@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UI/UX Internship Dashboard — responsive portfolio-ready project built with HTML, CSS and JavaScript.">
+  <title>UI/UX Internship Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark">UI</div>
+        <div>
+          <strong>DesignLab</strong>
+          <span>UI/UX Internship</span>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a class="nav-item active" href="#overview"><span>⌂</span> Overview</a>
+        <a class="nav-item" href="#tasks"><span>✓</span> Tasks</a>
+        <a class="nav-item" href="#components"><span>◈</span> Components</a>
+        <a class="nav-item" href="#prototype"><span>▷</span> Prototype</a>
+        <a class="nav-item" href="#handoff"><span>⇥</span> Handoff</a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="mini-card">
+          <span class="mini-icon">⚡</span>
+          <div><b>350 XP</b><small>earned this sprint</small></div>
+        </div>
+        <button class="profile-btn" id="profileBtn">
+          <span class="avatar">EE</span>
+          <span><b>UI/UX Learner</b><small>View profile</small></span>
+          <span>⋯</span>
+        </button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-btn mobile-menu" id="menuBtn" aria-label="Open menu">☰</button>
+        <div class="breadcrumb">Internship <span>/</span> <b>UI/UX Project</b></div>
+        <div class="top-actions">
+          <button class="icon-btn" id="themeBtn" title="Toggle theme">☼</button>
+          <button class="icon-btn" title="Notifications">♧<i></i></button>
+          <button class="user-chip"><span class="avatar small">EE</span><span>My workspace</span></button>
+        </div>
+      </header>
+
+      <section class="content" id="overview">
+        <div class="hero">
+          <div>
+            <span class="eyebrow">UI/UX INTERNSHIP PROJECT</span>
+            <h1>Design System &amp;<br><em>Dashboard Experience</em></h1>
+            <p>A complete product-design workflow from wireframes and reusable components to interactive prototyping and developer handoff.</p>
+            <div class="hero-actions">
+              <a href="#prototype" class="btn primary">View prototype <span>→</span></a>
+              <a href="#handoff" class="btn secondary">Developer handoff</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="mock-window">
+              <div class="mock-head"><span></span><span></span><span></span><b>Dashboard</b></div>
+              <div class="mock-grid">
+                <div class="mock-sidebar"></div>
+                <div>
+                  <div class="mock-title"></div>
+                  <div class="mock-cards"><i></i><i></i><i></i></div>
+                  <div class="mock-chart"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats">
+          <article class="stat-card"><span class="stat-icon blue">✓</span><div><b>7 / 7</b><small>Tasks completed</small></div><strong>100%</strong></article>
+          <article class="stat-card"><span class="stat-icon purple">⚡</span><div><b>350 XP</b><small>Experience earned</small></div><strong>+50</strong></article>
+          <article class="stat-card"><span class="stat-icon orange">◈</span><div><b>12</b><small>Reusable components</small></div><strong>+4</strong></article>
+          <article class="stat-card"><span class="stat-icon green">↗</span><div><b>92%</b><small>Design consistency</small></div><strong>+8%</strong></article>
+        </div>
+
+        <div class="section-heading" id="tasks">
+          <div><span class="eyebrow">PROJECT WORKFLOW</span><h2>Design milestones</h2></div>
+          <button class="filter-btn" id="filterBtn">All tasks ▾</button>
+        </div>
+
+        <div class="task-grid">
+          <article class="task-card completed">
+            <div class="task-number">01</div><span class="status">Completed ✓</span>
+            <h3>Design System Foundations</h3><p>Define the visual language, spacing, grids and core design tokens.</p>
+            <div class="task-footer"><span>🎨 Design system</span><b>50 XP</b></div>
+          </article>
+          <article class="task-card completed">
+            <div class="task-number">02</div><span class="status">Completed ✓</span>
+            <h3>Typography &amp; Colors</h3><p>Configure shared type scales and accessible primary, secondary and neutral colors.</p>
+            <div class="task-footer"><span>🔤 Visual language</span><b>50 XP</b></div>
+          </article>
+          <article class="task-card completed">
+            <div class="task-number">03</div><span class="status">Completed ✓</span>
+            <h3>Wireframing &amp; Hierarchy</h3><p>Outline page structures and organize content zones before styling.</p>
+            <div class="task-footer"><span>▦ Wireframe</span><b>50 XP</b></div>
+          </article>
+          <article class="task-card completed">
+            <div class="task-number">04</div><span class="status">Completed ✓</span>
+            <h3>Reusable Components</h3><p>Create buttons, inputs, cards and states using a consistent component system.</p>
+            <div class="task-footer"><span>◈ Components</span><b>50 XP</b></div>
+          </article>
+          <article class="task-card completed">
+            <div class="task-number">05</div><span class="status">Completed ✓</span>
+            <h3>High-Fidelity Dashboard</h3><p>Build the final visual presentation with responsive layouts and data cards.</p>
+            <div class="task-footer"><span>▣ High fidelity</span><b>50 XP</b></div>
+          </article>
+          <article class="task-card completed">
+            <div class="task-number">06</div><span class="status">Completed ✓</span>
+            <h3>Interactive Prototyping</h3><p>Connect frames and interactions to simulate a clickable application flow.</p>
+            <div class="task-footer"><span>▷ Prototype</span><b>50 XP</b></div>
+          </article>
+          <article class="task-card completed">
+            <div class="task-number">07</div><span class="status">Completed ✓</span>
+            <h3>Developer Handoff</h3><p>Document spacing, component states, assets and implementation notes.</p>
+            <div class="task-footer"><span>⇥ Handoff</span><b>50 XP</b></div>
+          </article>
+        </div>
+
+        <section id="components" class="showcase-section">
+          <div class="section-heading"><div><span class="eyebrow">DESIGN SYSTEM</span><h2>Reusable components</h2></div><span class="section-note">Built for consistency</span></div>
+          <div class="component-layout">
+            <div class="panel">
+              <h3>Buttons &amp; states</h3>
+              <p class="muted">Master components with hover, focus and disabled variants.</p>
+              <div class="button-row">
+                <button class="btn primary">Primary action</button>
+                <button class="btn secondary">Secondary</button>
+                <button class="btn ghost">Ghost</button>
+                <button class="btn primary disabled" disabled>Disabled</button>
+              </div>
+              <div class="input-demo">
+                <label>Project name</label><div class="input-box">UI/UX Dashboard <span>⌘K</span></div>
+              </div>
+            </div>
+            <div class="panel tokens">
+              <h3>Design tokens</h3>
+              <div class="token-row"><span class="swatch navy"></span><div><b>Primary / 900</b><small>#0B1220</small></div></div>
+              <div class="token-row"><span class="swatch blue"></span><div><b>Primary / 500</b><small>#3B82F6</small></div></div>
+              <div class="token-row"><span class="swatch cyan"></span><div><b>Accent / 400</b><small>#22D3EE</small></div></div>
+              <div class="token-row"><span class="swatch surface"></span><div><b>Surface / 100</b><small>#F8FAFC</small></div></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="prototype" class="prototype-section">
+          <div class="section-heading"><div><span class="eyebrow">INTERACTION DESIGN</span><h2>Clickable prototype</h2></div><span class="section-note">Try the tabs</span></div>
+          <div class="prototype">
+            <div class="proto-sidebar">
+              <div class="proto-brand">DesignLab</div>
+              <button class="proto-tab active" data-tab="home">Overview</button>
+              <button class="proto-tab" data-tab="analytics">Analytics</button>
+              <button class="proto-tab" data-tab="activity">Activity</button>
+            </div>
+            <div class="proto-main">
+              <div class="proto-top"><div><small>Good afternoon</small><h3 id="protoTitle">Your progress</h3></div><span class="pill">Live prototype</span></div>
+              <div id="protoContent" class="proto-content">
+                <div class="proto-kpis"><div><small>Completion</small><b>92%</b></div><div><small>XP earned</small><b>350</b></div><div><small>Tasks</small><b>7/7</b></div></div>
+                <div class="fake-chart"><span style="height:35%"></span><span style="height:55%"></span><span style="height:42%"></span><span style="height:70%"></span><span style="height:62%"></span><span style="height:86%"></span><span style="height:78%"></span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="handoff" class="handoff-section">
+          <div class="section-heading"><div><span class="eyebrow">DEVELOPER HANDOFF</span><h2>Implementation specs</h2></div></div>
+          <div class="handoff-grid">
+            <article class="handoff-card"><span>↔</span><h3>Spacing</h3><p>Base unit: <b>4px</b><br>Section gap: <b>32px</b><br>Card padding: <b>24px</b></p></article>
+            <article class="handoff-card"><span>⌁</span><h3>Typography</h3><p>Font: <b>Inter</b><br>H1: 48/56 · H2: 28/36<br>Body: 16/24</p></article>
+            <article class="handoff-card"><span>◉</span><h3>Responsive</h3><p>Desktop: 1440px<br>Tablet: 768px<br>Mobile: 360px</p></article>
+            <article class="handoff-card"><span>◇</span><h3>Accessibility</h3><p>AA contrast<br>Visible focus states<br>Semantic HTML</p></article>
+          </div>
+        </section>
+
+        <footer>
+          <span>© 2026 DesignLab UI/UX Internship Project</span>
+          <span>Built with HTML · CSS · JavaScript</span>
+        </footer>
+      </section>
+    </main>
+  </div>
+
+  <div class="toast" id="toast">Prototype interaction updated ✓</div>
+  <script src="script.js"></script>
+</body>
+</html>
